@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container h4{
+    font-size: 16px;
+    background-color: rgb(172, 172, 172);
+    margin: 15px 0 15px 0;
+}
+
+.container .radio{
+    margin-left: 40px;
+}
+
+.container .radio2{
+    margin-left: 250px;
+}
+
+.container p{
+    margin: 0;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup-01</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1><b>สมาคมผู้ตรวจสอบอาคาร<br>THE BUILDING INSPECTOR ASSOCIATION</b></h1>
+            <h3>ใบสมัครสมาชิก/ต่ออายุสมาชิก(Application From)</h3>
+        </header>
+        <section class="container">
+            <form>
+                <label for="">เลขที่สมาชิก</label>
+                <input type="number">
+                <label for="">วัน/เดือน/ปี </label>
+                <input type="date"><br>
+                <h6>(สำหรับเจ้าหน้าที่/กรณีต่ออายุสมาชิกเก่า)</h6>
+              
+                <lebel for="">ชื่อ (First Name) : </lebel>
+                <input type="text">
+
+                <lebel for="">นามสกุล (Surname) : </lebel>
+                <input type="text">
+                
+                <label for="">วัน/เดือน/ปี (Data Of Birth) : </label>
+                <input type="date">
+
+                <label for="">อายุ (Age) : </label>
+                <input type="number">
+
+                <label for="male">เพศ (Sex) : </label>
+                <input type="radio" class="radios" name="Sex" id="male" value="male">
+                <label for="male">ชาย</label>
+                <input type="radio" class="radios" name="Sex" id="female" value="female">
+                <label for="female">หญิง</label><br>
+
+                <lebel for="">สัญชาติ (Nationality) : </lebel>
+                <input type="text">
+              
+                <label for="">หน่วยงาน/บริษัท (Agency/Company) : </label>
+                <input type="text">
+  
+                <label for="">ประเภทธุรกิจ (Business Type) : </label>
+                <input type="text"><br>
+              
+                <label for="">ที่อยู่บริษัท : </label>
+                <input type="text">
+  
+                <label for="">หมู่ : </label>
+                <input type="text">
+  
+                <label for="">ตรอก/ซอย : </label>
+                <input type="text">
+  
+                <label for="">ถนน : </label>
+                <input type="text">
+  
+                <label for="">ตำบล/แขวง : </label>
+                <input type="text">
+  
+                <label for="">อำเภอ/เขต : </label>
+                <input type="text">
+  
+                <label for="">จังหวัด</label>
+                <input type="text"><br>
+  
+                <label for="">รหัสไปรษณีย์ : </label>
+                <input type="number">
+  
+                <label for="">โทรศัพท์/มือถือ : </label>
+                <input type="tel">
+  
+                <label for="">โทรศัพท์ : </label>
+                <input type="tel">
+  
+                <label for="">โทรสาร : </label>
+                <input type="tel">
+  
+                <label for="">Email : </label>
+                <input type="email" id="emailInput">
+                <button onclick="validateEmail()">Check Email</button>
+                <p id="result"></p>
+
+                <label for="">ที่อยู่ปัจจุบัน : </label>
+                <input type="text">
+  
+                <label for="">หมู่ : </label>
+                <input type="number"><br>
+  
+                <label for="">ตรอก/ซอย : </label>
+                <input type="text">
+  
+                <label for="">ถนน : </label>
+                <input type="text">
+  
+                <label for="">ตำบล/แขวง : </label>
+                <input type="text">
+  
+  
+                <label for="">อำเภอ/เขต : </label>
+                <input type="text">
+  
+                <label for="">จังหวัด</label>
+                <input type="text">
+  
+                <label for="">รหัสไปรษณีย์ : </label>
+                <input type="number">
+  
+                <label for="">โทรศัพท์/มือถือ : </label>
+                <input type="tel">
+  
+                <label for="">โทรศัพท์ : </label>
+                <input type="tel">
+  
+                <label for="">ID Line</label>
+                <input type="text">
+  
+                <label for="">Email : </label>
+                <input type="email" id="emailInput">
+                <button onclick="validateEmail()">Check Email</button>
+                <p id="result"></p>
+            </form>
+
+            <form>
+                <h4>สถานที่ติดต่อ (Contact Address)</h4>
+                <input type="radio" class="radio" name="contactaddress" id="company" value="company">
+                <label for="company">ที่อยู่บริษัท (Company)</label>
+                <input type="radio" class="radio" name="contactaddress" id="home" value="home">
+                <label for="home">ที่อยู่ปัจจุบัน (Home)</label>     
+            </form>
+            
+            <form>
+                <h4>ระดับการศึกษาสูงสุด (Highest Degree Of Graduated)</h4>
+                <input type="radio" class="radio" name="hdog" id="vc" value="vc">
+                <label for="vc">ปวช. (Vocational Certificate)</label>
+                <input type="radio" class="radio" name="hdog" id="hvc" value="hvc">
+                <label for="hvc">ปวส. (High Vocational Certificate)</label> 
+                <input type="radio" class="radio" name="hdog" id="bachelor" value="bachelor">
+                <label for="bachelor">ปริญญาตรี (Bachelor) คณะ : </label>
+                <input type="text">
+                <label for="">สาขาวิชา</label>
+                <input type="text">
+                <label for="">สถาบัน/มหาวิทยาลัย</label>
+                <input type="text"><br>
+                <input type="radio" class="radio" name="hdog" id="moh" value="moh">
+                <label for="moh">ปริญญาโท หรือ สูงกว่า(Master of Higher) คณะ : </label>
+                <input type="text">
+                <label for="">สาขาวิชา</label>
+                <input type="text">
+                <label for="">สถาบัน/มหาวิทยาลัย</label>
+                <input type="text"><br>   
+              </form>
+              
+              <form>
+                <h4>อาชีพ</h4>
+                <input type="radio" class="radio" name="career" id="building" value="building">
+                <label for="building">ผู้ตรวจสอบอาคาร (ใบอนุญาตเลขที่ <input type="text">)</label>
+                <input type="radio" class="radio" name="career" id="pow" value="pow">
+                <label for="pow">ผู้ตรวจสอบพลังงาน (ใบอนุญาตเลขที่ <input type="text">)</label>
+                <input type="radio" class="radio" name="career" id="elec" value="elec">
+                <label for="elec">ผู้ตรวจระบบไฟฟ้า (ใบอนุญาตเลขที่ <input type="text">)</label><br>
+                <input type="radio" class="radio" name="career" id="private" value="private">
+                <label for="private">ผู้ตรวจสอบเอกชน(โรงงาน) (ใบอนุญาตเลขที่ <input type="text">)</label>
+                <input type="radio" class="radio" name="career" id="else" value="else">
+                <label for="else">อื่นๆ (โปรดระบุ <input type="text">)</label>
+                <p>ข้าพเจ้าขอรับรองว่าข้อความข้างต้นเป็นจริงทุกประการ เมื่อได้เป็นสมาชิกของสมาคมผู้ตรวจสอบอาคาร แล้วข้าพเจ้าจะส่งเสริมกิจกรรมต่างๆ ของสมาคม เพื่อให้เกิดประโยชน์สูงสุด</p>      
+              </form>
+
+              <form>
+                <h4>โดยข้าพเจ้ามีความประสงค์สมัครสมาชิกในประเภท ดังนี้</h4>
+                        <input type="radio" class="radio" name="type" id="person" value="person">
+                        <label for="person">ประเภทบุคคล</label>
+                        <input type="radio" class="radio2" name="type" id="associateperson" value="associateperson">
+                        <label for="associateperson">ประเภทบุคคลสมทบ</label><br>
+                        <input type="radio" class="radio" name="money" id="oneyear" value="oneyear">
+                        <label for="oneyear">รายปี 400 บาท</label>
+                        <input type="radio" class="radio" name="money" id="fiveyear" value="fiveyear">
+                        <label for="fiveyear">ราย 5 ปี 1,450 บาท</label>    
+                        <input type="radio" class="radio" name="money" id="oneyear" value="oneyear">
+                        <label for="oneyear">รายปี 300 บาท</label>
+                        <input type="radio" class="radio" name="money" id="fiveyear" value="fiveyear">
+                        <label for="fiveyear">ราย 5 ปี 1,000 บาท</label><br>    
+
+                        <input type="radio" class="radio" name="type" id="corporation" value="corporation">
+                        <label for="corporation">ประเภทนิติบุคคล</label>
+                        <input type="radio" class="radio2" name="type" id="associatejuristicperson" value="associatejuristicperson">
+                        <label for="associatejuristicperson">ประเภทนิติบุคคลสมทบ</label><br>
+                        <input type="radio" class="radio" name="money" id="oneyear" value="oneyear">
+                        <label for="oneyear">รายปี 3,000 บาท</label>
+                        <input type="radio" class="radio" name="money" id="fiveyear" value="fiveyear">
+                        <label for="fiveyear">ราย 5 ปี 13,500 บาท</label>    
+                        <input type="radio" class="radio" name="money" id="oneyear" value="oneyear">
+                        <label for="oneyear">รายปี 2,000 บาท</label>
+                        <input type="radio" class="radio" name="money" id="fiveyear" value="fiveyear">
+                        <label for="fiveyear">ราย 5 ปี 9,000 บาท</label>    
+
+              </form>
+            
+              <form>
+                <h4>ประเภทชำระเงิน</h4>
+                <input type="radio" class="radio" name="patmenttype" id="cash" value="cash">
+                <label for="cash">เงินสด จำนวน <input type="number"> บาท</label>
+                <br>
+                <input type="radio" class="radio" name="patmenttype" id="transfermoney" value="transfermoney">
+                <label for="transfermoney">เงินโอน ธนาคารไทยพาณิชย์ สาขาสี่แยกศรีวรา ชื่อบัญชี "สมาคมผู้ตรวจสอบอาคาร" เลขที่บัญชี 140-2-35560-9 brพร้อมส่งสำเนาใบ Pay In มาที่โทรสาร 02-184-4613/bsa.janjira@gmail.com,bsa.siwawut@gmail.com</label>
+            </form><br>
+
+            <form class="footer">
+                <input type="radio" name="agree" id="agree" value="agree">
+                <label for="agree"><b>ยินยอมให้สมาคม เปิดเผยชื่อ - ข้อมูลส่วนตัวเพื่อประโยชน์ในการค้นหาข้อมูลผู้ตรวจสอบจากผู้สนใจ</b></label>
+                <br>
+                <input type="radio" name="agree" id="disagree" value="disagree">
+                <label for="disagree"><b>ไม่ยินยอมให้สมาคม เปิดเผยชื่อ - ข้อมูลส่วนตัว</b></label>
+                <h4><b>เอกสารประกอบการสมัคร</b></h4>
+                <p>1.สำเราบัตรประชาชน  2.สำเนาจดทะเบียนบริษัท(เฉพาะนิติบุคคล) 3.สำเนาใบประกอบวิชาชีพ 4.สำเนาวุฒิบัตรการขึ้นทะเบียนผู้ตรวจสอบอาคาร/ผู้ตรวจสอบพลังงาน/ผู้ตรวจสอบระบบไฟฟ้า/ผู้ตรวจสอบเอกชน(โรงงานถ้ามี)<br> 5.รูปถ่าย 1 นิ้ว 1 รูป</p>
+            </form>
+        </section> 
+        <script src="script.js"></script>   
+    </body>    
+</html>
