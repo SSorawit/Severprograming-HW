@@ -8,8 +8,16 @@ body {
     align-items: center;
 }
 
+header {
+    width: 100%;
+    background-color: #cf783e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
 h1 {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     width: 100%;
     color: #ddd;
@@ -43,7 +51,7 @@ h1 {
 .b1 {
     border: none;
     color: rgb(255, 255, 255);
-    background-color: rgb(40, 98, 255);
+    background-color: #cf783e;
     border-radius: 12px;
     padding: 10px 20px;
     text-align: center;
