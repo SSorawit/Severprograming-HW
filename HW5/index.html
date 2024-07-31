@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>ครื่องคำนวนรหัสสีตัวต้านทาน</title>
+  </head>
+  <body>
+    <script src="display.js"></script>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <nav>
+      <h1 id="heading">เครื่องคำนวนรหัสสีตัวต้านทาน</h1>
+    </nav>
+    <main>
+      <div class="main-container">
+        <div class="box-cal">
+          <div>
+            <h2 id="a">จำนวนแถบ</h2>
+            <select id="select-4_6" onchange="toggleContent()">
+              <option value="none">None</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div id="box-1" style="display: none">
+            <h2 id="a">แถบที่ 1</h2>
+            <select id="resistor-calc-1st" onchange="cal()">
+              <option value="">เลือกสี</option>
+              <option value="0">สีดำ (0)</option>
+              <option value="1">สีน้ำตาล (1)</option>
+              <option value="2">สีแดง (2)</option>
+              <option value="3">สีส้ม (3)</option>
+              <option value="4">สีเหลือง (4)</option>
+              <option value="5">สีเขียว (5)</option>
+              <option value="6">สีน้ำเงิน (6)</option>
+              <option value="7">สีม่วง (7)</option>
+              <option value="8">สีเทา (8)</option>
+              <option value="9">สีขาว (9)</option>
+            </select>
+          </div>
+          <div id="box-2" style="display: none">
+            <h2 id="a">แถบที่ 2</h2>
+            <select id="resistor-calc-2st" onchange="cal()">
+              <option value="">เลือกสี</option>
+              <option value="0">สีดำ (0)</option>
+              <option value="1">สีน้ำตาล (1)</option>
+              <option value="2">สีแดง (2)</option>
+              <option value="3">สีส้ม (3)</option>
+              <option value="4">สีเหลือง (4)</option>
+              <option value="5">สีเขียว (5)</option>
+              <option value="6">สีน้ำเงิน (6)</option>
+              <option value="7">สีม่วง (7)</option>
+              <option value="8">สีเทา (8)</option>
+              <option value="9">สีขาว (9)</option>
+            </select>
+          </div>
+          <div id="box-3" style="display: none" onchange="cal()">
+            <h2 id="a">แถบที่ 3</h2>
+            <select id="resistor-calc-3st">
+              <option value="">เลือกสี</option>
+              <option value="0">สีดำ (0)</option>
+              <option value="1">สีน้ำตาล (1)</option>
+              <option value="2">สีแดง (2)</option>
+              <option value="3">สีส้ม (3)</option>
+              <option value="4">สีเหลือง (4)</option>
+              <option value="5">สีเขียว (5)</option>
+              <option value="6">สีน้ำเงิน (6)</option>
+              <option value="7">สีม่วง (7)</option>
+              <option value="8">สีเทา (8)</option>
+              <option value="9">สีขาว (9)</option>
+            </select>
+          </div>
+          <div id="box-4" style="display: none" onchange="cal()">
+            <h2 id="box-resistor-calc-multiplier">ตัวคูณ (แถบที่ 4)</h2>
+            <select id="resistor-calc-multiplier">
+              <option value="">เลือกสี</option>
+              <option value="0.01">เงิน (0.01 Ω)</option>
+              <option value="0.1">ทอง (0.1 Ω)</option>
+              <option value="1">สีดำ (1 Ω)</option>
+              <option value="10">สีน้ำตาล (10 Ω)</option>
+              <option value="100">สีแดง (100 Ω)</option>
+              <option value="1000">สีส้ม (1K Ω)</option>
+              <option value="10000">สีเหลือง (10K Ω)</option>
+              <option value="100000">สีเขียว (100K Ω)</option>
+              <option value="1000000">สีน้ำเงิน (1M Ω)</option>
+              <option value="10000000">สีม่วง (10M Ω)</option>
+            </select>
+          </div>
+          <div id="box-5" style="display: none" onchange="cal()">
+            <h2 id="box-band-tolerance">ความเผื่อ (แถบที่ 5)</h2>
+            <select id="resistor-calc-tolerance">
+              <option value="">เลือกสี</option>
+              <option value="± 10%">เงิน (± 10%)</option>
+              <option value="± 5%">ทอง (± 5%)</option>
+              <option value="± 1%">สีน้ำตาล (± 1%)</option>
+              <option value="± 2%">สีแดง (± 2%)</option>
+              <option value="± 0.5%">สีเขียว (± 0.5%)</option>
+              <option value="± 0.25%">สีน้ำเงิน (± 0.25%)</option>
+              <option value="± 0.1%">สีม่วง (± 0.1%)</option>
+            </select>
+          </div>
+          <div id="box-6" style="display: none" onchange="cal()">
+            <h2 id="a">PPM (แถบที่ 6)</h2>
+            <select id="resistor-calc-ppm">
+              <option value="">เลือกสี</option>
+              <option value="100">สีน้ำตาล (100 ppm)</option>
+              <option value="50">สีแดง (50 ppm)</option>
+              <option value="15">สีส้ม (15 ppm)</option>
+              <option value="25">สีเหลือง (25 ppm)</option>
+            </select>
+          </div>
+          <div id="box-7">
+            <h2 id="a">ค่าตัวต้านทาน</h2>
+            <li id="output-this"></li>
+          </div>
+        </div>
+        <div class="box-show" id="box-show" style="display: none">
+          <div class="resistor-container">
+            <div class="resistor">
+              <div class="sticky-left"></div>
+              <div class="left-left"></div>
+              <div class="band-number1" id="band-number1"></div>
+              <div class="left-right"></div>
+              <div class="band-number2" id="band-number2"></div>
+              <div class="band-spacing" id="sp1"></div>
+              <div class="band-number3" id="band-number3"></div>
+              <div class="band-spacing" id="sp2"></div>
+              <div class="band-multiplier" id="band-multiplier"></div>
+              <div class="band-spacing" id="sp3"></div>
+              <div class="band-tolerance" id="band-tolerance"></div>
+              <div class="right-left"></div>
+              <div class="band-ppm" id="band-ppm"></div>
+              <div class="right-right"></div>
+              <div class="sticky-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
